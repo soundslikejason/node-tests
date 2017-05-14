@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha **/*.test.js"
+    "test": "mocha **/*.test.js",
+    "test-watch": "nodemon --exec \"yarn test\""
   },
   "repository": "https://github.com/soundslikejason/node-tests.git",
   "author": "Jason Leong <soundslikejason@users.noreply.github.com>",
