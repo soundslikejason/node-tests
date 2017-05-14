@@ -1,0 +1,14 @@
+{
+  "name": "node-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "repository": "https://github.com/soundslikejason/node-tests.git",
+  "author": "Jason Leong <soundslikejason@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "3.0.0"
+  }
+}
