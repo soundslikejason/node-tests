@@ -10,6 +10,14 @@ it('should add two numbers', () => {
   // }
 });
 
+it('should async add two numbers', (done) => {
+  utils.asyncAdd(4, 3, (sum) => {
+    expect(sum).toBe(7).toBeA('number');
+    done();
+  });
+});
+
+
 it('should square a number', () => {
   var res = utils.square(8);
   
@@ -17,6 +25,13 @@ it('should square a number', () => {
   // if (res !== 64) {
   //   throw new Error(`Expected 64, but got ${res}.`);
   // }
+});
+
+it('should async square a number', (done) => {
+  utils.asyncSquare(5, (square) => {
+    expect(square).toBe(25).toBeA('number');
+    done();
+  });
 });
 
 // should verify first and last names are set
